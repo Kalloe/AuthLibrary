@@ -15,11 +15,11 @@ angular.module('authLibraryApp')
       var user = {};
 
       $http.post(url, user)
-        .success(function(res) {
+        .then(function(res) {
           console.log('good');
         })
-        .error(function(err) {
-          alert('warning', 'Opps!', 'Could not register');
+        .catch(function(err) {
+          alert('warning', 'Damn!', 'Registration FAILED!!');
         });
-    }
+    };
   });
