@@ -16,7 +16,7 @@ angular.module('authLibraryApp')
 
       $http.post(url, user)
         .then(function(res) {
-          lert('success', 'Woo!', 'Registration is successful!');
+          alert('success', 'Woo!', 'Registration is successful!');
         })
         .catch(function(err) {
           alert('warning', 'Damn!', 'Registration FAILED!!');
